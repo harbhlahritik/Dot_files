@@ -18,4 +18,8 @@ let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
 vmap '' :w !pbcopy<CR><CR>
 se mouse+=a
-set guifont=Monaco-Linux\ 12
+set ignorecase
+set laststatus=2
+set autoindent
+set smartcase
+set showcmd
