@@ -1,0 +1,35 @@
+{
+  "window.zoomLevel": 0,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+  },
+
+  "emmet.includeLanguages": {
+      "javascript": "javascriptreact"
+  },
+
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": true,
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "sync.gist": "0c21bd7e8ef5c948c9b0ec8650b58a2d",
+  "java.semanticHighlighting.enabled": true,
+  "python.languageServer": "Microsoft",
+  "dart.flutterSdkPath": "/mnt/c/flutter_windows_1.17.4-stable",
+  "editor.tabSize": 2,
+  "editor.fontSize": 16
+}
