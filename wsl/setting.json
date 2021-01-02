@@ -1,35 +1,151 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
 {
-  "window.zoomLevel": 0,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "git.confirmSync": false,
-  "git.autofetch": true,
-  "git.enableSmartCommit": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "files.exclude": {
-      "**/.classpath": true,
-      "**/.project": true,
-      "**/.settings": true,
-      "**/.factorypath": true
-  },
+    "$schema": "https://aka.ms/terminal-profiles-schema",
 
-  "emmet.includeLanguages": {
-      "javascript": "javascriptreact"
-  },
+    "defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+    "alwaysShowTabs": true,
+    "initialCols": 80,
+    "initialRows": 24,
+    "showTabsInTitlebar": true,
+    "showTerminalTitleInTitlebar": true,
+    "tabWidthMode": "equal",
 
-  "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": true,
+    "profiles":
+    [
+        {
+            "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+            "hidden": false,
+            "name": "Ubuntu-18.04",
+            "fontFace": "Consolas",
+            "fontSize": 11,
+            "colorScheme": "hritik-xterm",
+            // "background": "#000000",
+            // "padding": "1, 1, 1, 1",
+            // "padding": "0",
+            // "useAcrylic": true,
+            // "antialiasingMode": "cleartype",
+            // "acrylicOpacity": 0.85, 
+            "source": "Windows.Terminal.Wsl"
+        },
+        {
+            // Make changes here to the powershell.exe profile
+            "guid": "{b0b257d3-1348-4760-8b87-9f6594169654}",
+            "name": "Git bash",
+            "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "startingDirectory": "C:\\Users\\harbh\\Desktop",
+            "hidden": false,
+            "fontFace": "Consolas",
+            "fontSize": 11,
+            "colorScheme": "Dracula",
+            "padding": "1, 1, 1, 1",
+            "useAcrylic": true,
+            "acrylicOpacity": 0.75
+        },
+        {
+            // Make changes here to the cmd.exe profile
+            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "name": "cmd",
+            "commandline": "cmd.exe",
+            "hidden": false,
+            "fontFace": "Consolas",
+            "fontSize": 11,
+            "colorScheme": "Dracula",
+            "padding": "1, 1, 1, 1",
+            "useAcrylic": true,
+            "acrylicOpacity": 0.75
+        },
+        {
+            // Make changes here to the powershell.exe profile
+            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+            "name": "Windows PowerShell",
+            "commandline": "powershell.exe",
+            "hidden": false,
+            "fontFace": "Consolas",
+            "fontSize": 11,
+            "colorScheme": "Dracula",
+            "padding": "1, 1, 1, 1",
+            "useAcrylic": true,
+            "acrylicOpacity": 0.75
+        },
+        {
+            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+            "hidden": true,
+            "name": "Azure Cloud Shell",
+            "source": "Windows.Terminal.Azure"
+        }
+    ],
 
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+            "name": "Dracula",
+            "black": "#000000",
+            "red": "#ff5555",
+            "green": "#50fa7b",
+            "yellow": "#f1fa8c",
+            "blue": "#bd93f9",
+            "purple": "#ff79c6",
+            "cyan": "#8be9fd",
+            "white": "#bbbbbb",
+            "brightBlack": "#555555",
+            "brightRed": "#ff5555",
+            "brightGreen": "#50fa7b",
+            "brightYellow": "#f1fa8c",
+            "brightBlue": "#bd93f9",
+            "brightPurple": "#ff79c6",
+            "brightCyan": "#8be9fd",
+            "brightWhite": "#ffffff",
+            "background": "#1e1f29",
+            "foreground": "#f8f8f2"
+        },
+        {
+            "name": "Blue Matrix",
+            "black": "#101116",
+            "red": "#ff5680",
+            "green": "#00ff9c",
+            "yellow": "#fffc58",
+            "blue": "#00b0ff",
+            "purple": "#d57bff",
+            "cyan": "#76c1ff",
+            "white": "#c7c7c7",
+            "brightBlack": "#686868",
+            "brightRed": "#ff6e67",
+            "brightGreen": "#5ffa68",
+            "brightYellow": "#fffc67",
+            "brightBlue": "#6871ff",
+            "brightPurple": "#d682ec",
+            "brightCyan": "#60fdff",
+            "brightWhite": "#ffffff",
+            "background": "#101116",
+            "foreground": "#00a2ff"
+        },
+        {
+            "name": "hritik-xterm",
+            "black": "#000000", //000000
+            "red": "#800000", //800000
+            "green": "#008000", //008000
+            "yellow": "#808000", //808000
+            "blue": "#6f00ff", //#000080
+            "purple": "#800080", //800080
+            "cyan": "#008080", //008080
+            "white": "#c0c0c0", //c0c0c0
+            "brightBlack": "#808080",
+            "brightRed": "#ff0000",
+            "brightGreen": "#00ff00",
+            "brightYellow": "#ffff00",
+            "brightBlue": "#5050ff",
+            "brightPurple": "#ff00ff",
+            "brightCyan": "#00ffff",
+            "brightWhite": "#ffffff",
+            "background": "#000000",
+            "foreground": "#ffffff"
+        }
+    ],
 
-  "sync.gist": "0c21bd7e8ef5c948c9b0ec8650b58a2d",
-  "java.semanticHighlighting.enabled": true,
-  "python.languageServer": "Microsoft",
-  "dart.flutterSdkPath": "/mnt/c/flutter_windows_1.17.4-stable",
-  "editor.tabSize": 2,
-  "editor.fontSize": 16
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": []
 }
